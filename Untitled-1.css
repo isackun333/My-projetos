@@ -1,0 +1,73 @@
+/* Define the background and base font style for the whole page */
+body {
+  background-image: url(images/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 25px;
+}
+
+/* Style for the first paragraph with a red color */
+.paragraph1 {
+  color: #FF0000;
+}
+
+/* Style for the super title with a yellow color and uppercase text */
+.TextoSuper {
+  color: #FFFF00;
+  text-transform: uppercase;
+}
+
+/* Style for the container of the centered image */
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the font size of the main title */
+.fonteari {
+  font-size: 2.5rem;
+}
+
+/* Style for the outro section with a red color */
+.outro {
+  color: #FF0000;
+  transition: all 0.5s ease-in-out;
+}
+
+.outro:hover {
+  /* Adicione a transição suave quando passar o mouse em cima da classe .outro */
+  color: #FFCC00;
+  transform: scale(1.5);
+  font-size: 50px;
+}
+/* Style for the highlighted text with a yellow color and larger font size */
+.highlight {
+  color: #FFFF00;
+  font-size: 35px;
+}
+
+.quote-text {
+  font-size: 2rem;
+  color: rgb(253, 236, 0);
+}
+.intro-image {
+  border: #FF0000 solid 3px;
+  transition: transform 0.2s, filter 0.2s;
+  cursor: pointer;
+}
+.intro-image:hover {
+  /* Increase brightness by 50% instead of 150% to make it less harsh */
+  filter: brightness(150%);
+  /* Add a transition to make the animation smoother */
+  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+  /* Change the cursor to a pointer to indicate that the image is clickable */
+  cursor: pointer;
+  /* Scale the image up to 1.2x instead of 2.0x to make it less drastic */
+  transform: scale(1.4);
+  border-radius: 10px;
+}
